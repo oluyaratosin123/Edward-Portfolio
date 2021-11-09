@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.logo__title').classList.add('rotate');
   const modal = document.createElement('div');
   const body = document.querySelector('body');
   const contPrjctDet = document.createElement('section');
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const contListItem2I = document.createElement('i');
   const contListItem3 = document.createElement('li');
   const contListItem4 = document.createElement('li');
-  const contListItem4I = document.createElement('li');
+  const contListItem4I = document.createElement('i');
   const contListItem5 = document.createElement('li');
   const figure = document.createElement('figure');
   const imageCont = document.createElement('img');
@@ -32,9 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const contLangBtn = document.createElement('div');
   const textCont = document.createElement('p');
   const close = document.createElement('i');
-
+ 
   // card part
-
+ 
   modal.classList.add('modal-pop-up');
   contPrjctDet.classList.add('pop-prjct-det');
   heading.classList.add('pop-heading-det');
@@ -71,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
   close.classList.add('fas');
   close.classList.add('close-pop-modal');
   close.classList.add('fa-lg');
-
+ 
   // pop up part
   body.appendChild(modal);
   body.appendChild(contPrjctDet);
@@ -105,11 +106,11 @@ document.addEventListener('DOMContentLoaded', () => {
   buttonLive.appendChild(iconButtonLive);
   buttonSource.appendChild(span2);
   buttonSource.appendChild(iconButtonSource);
-
+ 
   // card section part
   const projectInfoCard = [
     {
-      img: { url: './Images/Snapshoot-Portfolio1.png", alt: "project' },
+      img: { url: './Images/Snapshoot-Portfolio1.png', alt: 'project' },
       title: 'Tonic',
       prj_info: {
         title: 'CANOPY',
@@ -118,13 +119,13 @@ document.addEventListener('DOMContentLoaded', () => {
         year: 2015,
       },
       text_content:
-        'A daily selection of privately personalized reads; no accounts orsign-ups required.',
+        ' A daily selection of privately personalized reads; no accounts orsign-ups required.',
       languages: ['html', 'css', 'javascript'],
       button_project: 'See Project',
-      id: ' project1',
+      id: 'project1',
     },
     {
-      img: { url: './Images/snapshot-portfolio2.png", alt: "project' },
+      img: { url: './Images/snapshot-portfolio2.png', alt: 'project' },
       title: 'Multi-Post Stories',
       prj_info: {
         title: 'FACEBOOK',
@@ -133,10 +134,10 @@ document.addEventListener('DOMContentLoaded', () => {
         year: 2015,
       },
       text_content:
-        'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-      languages: [' html', 'css', 'javascript'],
+        ' A daily selection of privately personalized reads; no accounts orsign-ups required.',
+      languages: ['html', 'css', 'javascript'],
       button_project: 'See Project',
-      id: 'project1',
+      id: 'project2',
     },
     {
       img: { url: './Images/snapshot-portfolio3.png', alt: 'project' },
@@ -148,13 +149,13 @@ document.addEventListener('DOMContentLoaded', () => {
         year: 2015,
       },
       text_content:
-      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer your car.',      
+        ' A daily selection of privately personalized reads; no accounts orsign-ups required.',
       languages: ['html', 'css', 'javascript'],
       button_project: 'See Project',
       id: 'project3',
     },
     {
-      img: { url: './Images/snapshot-portfolio4.png", alt: "project' },
+      img: { url: './Images/snapshot-portfolio4.png', alt: 'project' },
       title: 'Uber Navigation',
       prj_info: {
         title: 'Uber',
@@ -163,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
         year: 2018,
       },
       text_content:
-        ' A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+        ' A daily selection of privately personalized reads; no accounts orsign-ups required.',
       languages: ['html', 'css', 'javascript'],
       button_project: 'See Project',
       id: 'project4',
@@ -216,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ulCardInfo.appendChild(liCardInfoDotCont1);
     const iconDotCard2 = document.createElement('i');
     iconDotCard2.classList.add('fas');
-    iconDotCard2.classList.add('olor__circle');
+    iconDotCard2.classList.add('color__circle');
     iconDotCard2.classList.add(`${projectInfoCard[i].prj_info.class}`);
     liCardInfoDotCont1.appendChild(iconDotCard2);
     const liCardInfoYear = document.createElement('li');
@@ -234,16 +235,16 @@ document.addEventListener('DOMContentLoaded', () => {
     buttonLangText.classList.add('lng__btn');
     liCardLangCont.appendChild(buttonLangText);
     buttonLangText.textContent = `${projectInfoCard[i].languages[0]}`;
-
+ 
     const liCardLangCont1 = document.createElement('li');
     liCardLangCont1.classList.add('lng__btn--cont');
     ulCradLangCont.appendChild(liCardLangCont1);
     const buttonLangText1 = document.createElement('button');
-    buttonLangText1.setAttribute('type", "button');
+    buttonLangText1.setAttribute('type', 'button');
     buttonLangText1.classList.add('lng__btn');
     liCardLangCont1.appendChild(buttonLangText1);
     buttonLangText1.textContent = `${projectInfoCard[i].languages[1]}`;
-
+ 
     const liCardLangCont2 = document.createElement('li');
     liCardLangCont2.classList.add('lng__btn--cont');
     ulCradLangCont.appendChild(liCardLangCont2);
@@ -252,12 +253,12 @@ document.addEventListener('DOMContentLoaded', () => {
     buttonLangText2.classList.add('lng__btn');
     liCardLangCont2.appendChild(buttonLangText2);
     buttonLangText2.textContent = `${projectInfoCard[i].languages[2]}`;
-
+ 
     const textParCard = document.createElement('p');
     textParCard.classList.add('project__desc--text');
     projInfoCardWrap.appendChild(textParCard);
     textParCard.textContent = `${projectInfoCard[i].text_content}`;
-
+ 
     const buttonProjLink = document.createElement('button');
     buttonProjLink.setAttribute('type', 'button');
     buttonProjLink.setAttribute('id', `${projectInfoCard[i].id}`);
@@ -290,6 +291,29 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     },
     project2: {
+      title: 'Multi-Post Stories',
+      prj_info: {
+        title: 'FACEBOOK',
+        class: 'fa-circle',
+        job: 'Full Stack Dev',
+        year: 2015,
+      },
+      url_img: './Images/snapshot-portfolio2.png',
+      text_content:
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+      languages: ['html', 'css', 'javascript'],
+      button_live: {
+        url: '#',
+        icon_class: 'fa-life-ring',
+        btn_live: 'See live',
+      },
+      button_source: {
+        url: '#',
+        icon_class: 'fa-github-square',
+        btn_source: 'See Source',
+      },
+    },
+    project3: {
       title: 'Facebook 360',
       prj_info: {
         title: 'FACEBOOK',
@@ -312,31 +336,6 @@ document.addEventListener('DOMContentLoaded', () => {
         btn_source: 'See Source',
       },
     },
-
-    project3: {
-      title: 'Facebook 360',
-      prj_info: {
-        title: 'FACEBOOK',
-        class: 'fa-circle',
-        job: 'Full Stack Dev',
-        year: 2015,
-      },
-      url_img: './Images/snapshot-portfolio3.png',
-      text_content:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-      languages: ['html', 'css', 'javascript'],
-      button_live: {
-        url: '#',
-        icon_class: 'fa-life-ring',
-        btn_live: 'See live',
-      },
-      button_source: {
-        url: '#',
-        icon_class: 'fa-github-square',
-        btn_source: 'See Source',
-      },
-    },
-
     project4: {
       title: 'Uber Navigation',
       prj_info: {
@@ -347,7 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       url_img: './Images/snapshot-portfolio4.png',
       text_content:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
       languages: ['html', 'css', 'javascript'],
       button_live: {
         url: '#',
@@ -361,7 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     },
   };
-
+ 
   // pop up section
   const projectButton = document.querySelectorAll(
     '#project1, #project2, #project3, #project4',
@@ -379,9 +378,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnLiveIcon = document.querySelector('.live-btn-text + .fas');
   const btnSourceText = document.querySelector('.source-btn-text');
   const btnSourceIcon = document.querySelector('.source-btn-text + .fab');
-
+ 
   // card section
-
+ 
   projectButton.forEach((btn) => {
     function popDetail() {
       modal.style.display = 'block';
@@ -414,22 +413,22 @@ document.addEventListener('DOMContentLoaded', () => {
     contPrjctDet.style.display = 'none';
   }
   close.addEventListener('click', closeModal);
-});
-
-const navMobileClose = document.querySelector('.icon-cont');
-const mobileMenu = document.querySelector('.mobile-menu');
-const humbMenu = document.querySelector('#open');
-const section = document.querySelectorAll('.link-mobile-menu');
-
-function closeMenu() {
+ });
+ 
+ const navMobileClose = document.querySelector('.icon-cont');
+ const mobileMenu = document.querySelector('.mobile-menu');
+ const humbMenu = document.querySelector('#open');
+ const section = document.querySelectorAll('.link-mobile-menu');
+ 
+ function closeMenu() {
   mobileMenu.style.display = 'none';
-}
-
-navMobileClose.addEventListener('click', closeMenu);
-function OpenMenu() {
+ }
+ 
+ navMobileClose.addEventListener('click', closeMenu);
+ function OpenMenu() {
   mobileMenu.style.display = 'block';
-}
-humbMenu.addEventListener('click', OpenMenu);
-section.forEach((item) => {
+ }
+ humbMenu.addEventListener('click', OpenMenu);
+ section.forEach((item) => {
   item.addEventListener('click', closeMenu);
-});
+ });
