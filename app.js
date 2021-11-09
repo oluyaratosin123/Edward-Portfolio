@@ -33,9 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const contLangBtn = document.createElement('div');
   const textCont = document.createElement('p');
   const close = document.createElement('i');
- 
   // card part
- 
   modal.classList.add('modal-pop-up');
   contPrjctDet.classList.add('pop-prjct-det');
   heading.classList.add('pop-heading-det');
@@ -72,7 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
   close.classList.add('fas');
   close.classList.add('close-pop-modal');
   close.classList.add('fa-lg');
- 
   // pop up part
   body.appendChild(modal);
   body.appendChild(contPrjctDet);
@@ -106,7 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
   buttonLive.appendChild(iconButtonLive);
   buttonSource.appendChild(span2);
   buttonSource.appendChild(iconButtonSource);
- 
   // card section part
   const projectInfoCard = [
     {
