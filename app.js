@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
         year: 2015,
       },
       text_content:
-        'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer your car.',      
+      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer your car.',      
       languages: ['html', 'css', 'javascript'],
       button_project: 'See Project',
       id: 'project3',
@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btn_live: 'See live',
       },
       button_source: {
-        url: "#",
+        url: '#',
         icon_class: 'fa-github-square',
         btn_source: 'See Source',
       },
