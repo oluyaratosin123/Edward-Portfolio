@@ -1,4 +1,4 @@
-//Selected the form and input values
+// Selected the form and input values
 const userName = document.querySelector('.user-name');
 const email = document.querySelector('.user-email');
 const message = document.querySelector('.user-message');
