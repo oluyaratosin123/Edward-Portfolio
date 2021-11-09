@@ -1,3 +1,4 @@
+//Selected the form and input values
 const userName = document.querySelector('.user-name');
 const email = document.querySelector('.user-email');
 const message = document.querySelector('.user-message');
@@ -9,7 +10,7 @@ window.addEventListener('load', () => {
     message.value = localData.message;
   }
 });
-
+// Save the input in the data
 userName.addEventListener('input', () => {
   const localData = JSON.parse(localStorage.getItem('data'));
   const data = {
