@@ -352,7 +352,6 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     },
   };
- 
   // pop up section
   const projectButton = document.querySelectorAll(
     '#project1, #project2, #project3, #project4',
@@ -404,7 +403,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   close.addEventListener('click', closeModal);
  });
- 
  const navMobileClose = document.querySelector('.icon-cont');
  const mobileMenu = document.querySelector('.mobile-menu');
  const humbMenu = document.querySelector('#open');
@@ -412,7 +410,6 @@ document.addEventListener('DOMContentLoaded', () => {
  function closeMenu() {
  mobileMenu.style.display = 'none';
  }
- 
  navMobileClose.addEventListener('click', closeMenu);
  function OpenMenu() {
   mobileMenu.style.display = 'block';
@@ -421,3 +418,4 @@ document.addEventListener('DOMContentLoaded', () => {
  section.forEach((item) => {
   item.addEventListener('click', closeMenu);
  });
+ 
