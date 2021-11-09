@@ -231,7 +231,6 @@ document.addEventListener('DOMContentLoaded', () => {
     buttonLangText.classList.add('lng__btn');
     liCardLangCont.appendChild(buttonLangText);
     buttonLangText.textContent = `${projectInfoCard[i].languages[0]}`;
- 
     const liCardLangCont1 = document.createElement('li');
     liCardLangCont1.classList.add('lng__btn--cont');
     ulCradLangCont.appendChild(liCardLangCont1);
@@ -240,7 +239,6 @@ document.addEventListener('DOMContentLoaded', () => {
     buttonLangText1.classList.add('lng__btn');
     liCardLangCont1.appendChild(buttonLangText1);
     buttonLangText1.textContent = `${projectInfoCard[i].languages[1]}`;
- 
     const liCardLangCont2 = document.createElement('li');
     liCardLangCont2.classList.add('lng__btn--cont');
     ulCradLangCont.appendChild(liCardLangCont2);
@@ -249,12 +247,10 @@ document.addEventListener('DOMContentLoaded', () => {
     buttonLangText2.classList.add('lng__btn');
     liCardLangCont2.appendChild(buttonLangText2);
     buttonLangText2.textContent = `${projectInfoCard[i].languages[2]}`;
- 
     const textParCard = document.createElement('p');
     textParCard.classList.add('project__desc--text');
     projInfoCardWrap.appendChild(textParCard);
     textParCard.textContent = `${projectInfoCard[i].text_content}`;
- 
     const buttonProjLink = document.createElement('button');
     buttonProjLink.setAttribute('type', 'button');
     buttonProjLink.setAttribute('id', `${projectInfoCard[i].id}`);
@@ -374,9 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnLiveIcon = document.querySelector('.live-btn-text + .fas');
   const btnSourceText = document.querySelector('.source-btn-text');
   const btnSourceIcon = document.querySelector('.source-btn-text + .fab');
- 
   // card section
- 
   projectButton.forEach((btn) => {
     function popDetail() {
       modal.style.display = 'block';
@@ -415,9 +409,8 @@ document.addEventListener('DOMContentLoaded', () => {
  const mobileMenu = document.querySelector('.mobile-menu');
  const humbMenu = document.querySelector('#open');
  const section = document.querySelectorAll('.link-mobile-menu');
- 
  function closeMenu() {
-  mobileMenu.style.display = 'none';
+ mobileMenu.style.display = 'none';
  }
  
  navMobileClose.addEventListener('click', closeMenu);
