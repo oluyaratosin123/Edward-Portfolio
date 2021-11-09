@@ -408,13 +408,13 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const humbMenu = document.querySelector('#open');
 const section = document.querySelectorAll('.link-mobile-menu');
 function closeMenu() {
-mobileMenu.style.display = 'none';
+  mobileMenu.style.display = 'none';
 }
 navMobileClose.addEventListener('click', closeMenu);
 function OpenMenu() {
-mobileMenu.style.display = 'block';
+  mobileMenu.style.display = 'block';
 }
 humbMenu.addEventListener('click', OpenMenu);
 section.forEach((item) => {
-item.addEventListener('click', closeMenu);
+  item.addEventListener('click', closeMenu);
 });
