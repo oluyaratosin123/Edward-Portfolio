@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectInfoCard = [
     {
       img: { url: './Images/Snapshoot-Portfolio1.png', alt: 'project' },
-      title: 'Tonic',
+      title: 'Tony',
       prj_info: {
         title: 'CANOPY',
         class: 'fa-circle',
